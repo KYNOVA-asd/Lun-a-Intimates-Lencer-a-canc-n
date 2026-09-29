@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lunéa Intimates Cancún, lencería fina creada para celebrar cada cuerpo.">
+  <title>Lunéa Intimates Cancún | Lencería fina</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="announcement">Envíos discretos en Cancún · Entrega gratuita desde $1,200 MXN</div>
+  <header class="site-header" id="inicio">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">
+      <span class="brand-mark">L</span>
+      <span>Lunéa Intimates <em>Cancún</em></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a><a href="#catalogo">Catálogo</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a>
+    </nav>
+    <button class="header-cart" type="button" data-open-cart aria-label="Abrir carrito">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h2l2.4 11.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L21 8H7M10 21a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm8 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/></svg>
+      <span>Bolsa</span><b class="cart-count" aria-live="polite">0</b>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">Lencería que abraza tu esencia</span>
+        <h1>Elegancia y comodidad que <em>habitan en ti.</em></h1>
+        <p>Piezas elegidas para sentirte auténtica, segura y maravillosamente tú. De Cancún para cada versión de ti.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#catalogo">Ver colección <span>→</span></a><a class="text-link" href="#nosotros">Nuestra esencia</a></div>
+        <div class="hero-details"><span>✦ Curaduría especial</span><span>✦ Tallas S a XL</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image-wrap"><img src="src/img/Talla Chica✨/polish_save(30).jpg" alt="Diseño blanco de la colección Lunéa Intimates Cancún"></div>
+        <span class="hero-stamp">Nueva<br><strong>colección</strong><br>2026</span>
+        <div class="hero-note"><small>Hecho para ti</small><strong>Suave. Íntimo. Único.</strong></div>
+      </div>
+    </section>
+
+    <section class="benefits" aria-label="Beneficios"><div><b>01</b><span><strong>Compra segura</strong>Tu privacidad primero</span></div><div><b>02</b><span><strong>Entrega local</strong>En Cancún y alrededores</span></div><div><b>03</b><span><strong>Atención personal</strong>Te ayudamos a elegir</span></div></section>
+
+    <section class="catalog section" id="catalogo">
+      <div class="section-heading"><div><span class="eyebrow">Selección Lunéa</span><h2>Encuentra tu nueva favorita</h2></div><p>Diseños que se adaptan a ti, no al revés.</p></div>
+      <div class="filters" role="group" aria-label="Filtrar por talla">
+        <button class="filter active" data-filter="Todos">Todo</button><button class="filter" data-filter="S">Talla S</button><button class="filter" data-filter="M">Talla M</button><button class="filter" data-filter="L">Talla L</button><button class="filter" data-filter="XL">Talla XL</button>
+      </div>
+      <div class="product-grid" id="product-grid"></div>
+    </section>
+
+    <section class="story section" id="nosotros">
+      <div class="story-art"><span class="outline-word">LUNÉA</span><div class="story-orbit">✦<br><small>Cancún, México</small></div></div>
+      <div class="story-copy"><span class="eyebrow">Nuestra esencia</span><h2>La confianza es la pieza que mejor te queda.</h2><p>Lunéa Intimates Cancún nace con una idea sencilla: la lencería debe sentirse tan bien como se ve. Elegimos piezas versátiles y favorecedoras para acompañar todos tus momentos.</p><div class="signature">Lunéa <span>♡</span></div></div>
+    </section>
+
+    <section class="contact section" id="contacto"><span class="eyebrow">Estamos cerca de ti</span><h2>¿Necesitas ayuda con tu talla?</h2><p>Escríbenos y recibe asesoría personal para encontrar tu ajuste ideal.</p><a class="button button-light" href="mailto:hola@lunaintimates.mx">Hablar con una asesora →</a></section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#inicio"><span class="brand-mark">L</span><span>Lunéa Intimates <em>Cancún</em></span></a><p>Lencería fina · Cancún, México</p><p>© <span id="year"></span> Lunéa Intimates Cancún</p></footer>
+
+  <button class="floating-cart" type="button" data-open-cart aria-label="Abrir carrito"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h2l2.4 11.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L21 8H7M10 21a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm8 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/></svg><span class="cart-count">0</span></button>
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-hidden="true" aria-label="Carrito de compras">
+    <div class="cart-header"><div><span class="eyebrow">Tu selección</span><h2>Mi bolsa <small id="cart-label">(0)</small></h2></div><button class="icon-button" type="button" data-close-cart aria-label="Cerrar carrito">×</button></div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-footer"><div class="shipping-note"><span>♡</span><p><strong>Empaque discreto incluido</strong><br>Tu compra siempre es privada.</p></div><div class="price-line"><span>Subtotal</span><strong id="subtotal">$0.00</strong></div><div class="price-line total"><span>Total</span><strong id="total">$0.00 MXN</strong></div><p class="tax-note">Impuestos incluidos. Envío calculado al finalizar.</p><button class="button button-primary checkout-button" id="checkout-button" type="button">Finalizar compra →</button></div>
+  </aside>
+
+  <dialog class="checkout-modal" id="checkout-modal"><button class="icon-button modal-close" type="button" data-close-modal aria-label="Cerrar">×</button><div id="checkout-form-view"><span class="modal-icon">♡</span><span class="eyebrow">Un último paso</span><h2>Finaliza tu pedido</h2><p>Déjanos tus datos y confirmaremos disponibilidad y entrega contigo.</p><form id="checkout-form"><label>Nombre completo<input name="name" type="text" autocomplete="name" required placeholder="Tu nombre"></label><label>WhatsApp<input name="phone" type="tel" autocomplete="tel" required placeholder="998 000 0000"></label><label>Correo electrónico<input name="email" type="email" autocomplete="email" required placeholder="hola@ejemplo.com"></label><button class="button button-primary" type="submit">Confirmar pedido</button></form></div><div class="success-view" id="success-view" hidden><span class="modal-icon success">✓</span><h2>¡Pedido recibido!</h2><p>Gracias por elegir Lunéa. En breve nos pondremos en contacto contigo para confirmar los detalles.</p><button class="button button-primary" type="button" data-close-modal>Seguir explorando</button></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite">Añadido a tu bolsa ♡</div>
+</body>
+</html>
